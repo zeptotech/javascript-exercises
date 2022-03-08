@@ -12,5 +12,18 @@ const removeFromArray = function (array) {
     return array;
 };
 
+// 3 arguments total
+// -first is array
+// -second and third are elements to remove
+
+// -iterate (loop) through array
+// -check with second argument
+// -check with third argument
+
+// --if value is equal to given argument
+// -remove value from array
+// -return array
+
 // Do not edit below this line
 module.exports = removeFromArray;
+
