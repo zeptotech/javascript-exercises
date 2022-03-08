@@ -19,5 +19,10 @@ const sumAll = function (integer1, integer2) {
     return sum;
 };
 
+// loop through two integers
+// -add each integer between the two (including the two selected)
+// -return total sum
+
+
 // Do not edit below this line
 module.exports = sumAll;
