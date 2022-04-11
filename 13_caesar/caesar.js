@@ -1,14 +1,19 @@
 const caesar = function (string, key) {
+    // create two arrays, one to convert to ASCII  and one to convert back to characters
     let outputASCII = [];
     let outputLetter = []
+
+    // function for ascii output array
 
     for (let i = 0; i < string.length; i++) {
         outputASCII.push(string.charCodeAt(i));
     }
 
+    // convert back to characters, modifying letters but nothing else
     outputASCII.filter(function (letter) {
         // if upper case
         if (letter > 64 && letter < 91) {
+            // adds use case for negative key
             letter -= 65;
             if (key < 0) {
                 outputLetter.push(String.fromCharCode((letter + key + 26) % 26 + 65));
@@ -18,6 +23,8 @@ const caesar = function (string, key) {
 
             // if lower case
         } else if (letter > 96 && letter < 123) {
+            // adds use case for negative key
+
             letter -= 97;
             if (key < 0) {
                 outputLetter.push(String.fromCharCode((letter + key + 26) % 26 + 97))
